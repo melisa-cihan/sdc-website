@@ -1,0 +1,5 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="website" type="NodeJSConfigurationType" editBeforeRun="true" singleton="false" path-to-node="$PROJECT_DIR$/RecoonVideo.html" path-to-js-file="RecoonVide.html" working-dir="$PROJECT_DIR$/projektwebsite/js">
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>DATACIDERS</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/templatemo-digital-trend.css">
+</head>
+
+<body>
+
+<style>
+    .slider-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .slider {
+        display: flex;
+        animation: scroll 15s linear infinite;
+    }
+
+    .image {
+        max-width: 100%;
+        max-height: 200px;
+        object-fit: contain;
+        margin: 0 10px;
+    }
+
+    .image-carousel .image {
+
+        padding: 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        height: 150px;
+        width: 200px;
+        border: 2px solid rgb(247, 244, 227);
+        border-radius: 500px;
+
+    }
+
+    .members-container {
+        border: 4px solid #fff;
+        border-radius: 27px;
+        animation: borderBlink 2s infinite;
+        margin-bottom: 60px;
+        background-color: var(--project-bg);
+        margin-left: -35px;
+    }
+
+    @keyframes borderBlink {
+        50% {
+            border-color: rgb(0, 13, 128);
+        }
+        50% {
+            border-color: var(--project-bg);
+        }
+        50% {
+            border-color: var(--secondary-color);
+        }
+    }
+    @keyframes scroll {
+        0%, 100% {
+            transform: translateX(30%);
+            transform: translateX(5%);
+        }
+        50% {
+            transform: translateX(-30%);
+            transform: translateX(-130%);
+        }
+    }
+
+    .rounded-btn {
+        display: inline-block;
+        padding: 10px 10px;
+        border-radius: 50px;
+        background-color: #fff;
+        color: rgb(0, 13, 128);
+        text-decoration: none;
+        border: 2px solid rgb(0, 13, 128);
+    }
+
+    .custom-width-btn {
+        width: 100px;
+    }
+
+    .ergebnis-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+    gap: 20px; /* Espace entre les images */
+    justify-content: center;
+    align-items: center;
+}
+
+.members-image img {
+    width: 100%; /* Les images prennent toute la largeur de leur cellule */
+    max-width: 300px; /* Limite la taille des images si nécessaire */
+    border: 30px solid var(--project-bg);
+    border-radius: 25px;
+}
+
+
+    
+
+</style>
+
+
+<!-- Header -->
+<header style="background: url('image-path.jpg') no-repeat center center/cover; color: white; padding: 20px 0;">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" style="color: white; font-weight: 900; font-size: 28px;">
+                DATACIDERS Platzbuchungssystem
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#ziel" class="nav-link smoothScroll" style="color: white;">Aufgabe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#ergebnisse" class="nav-link smoothScroll" style="color: white;">Ergebnisse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#project" class="nav-link smoothScroll" style="color: white;">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#technologien" class="nav-link smoothScroll" style="color: white;">Tools</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://fiw.htw-berlin.de" class="nav-link rounded-btn btn-lg custom-width-btn text-center"
+                           style="color: #000; background-color: #fff; border-radius: 20px; font-weight: 700;">
+                            HTW FIW
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container text-center mt-4">
+        <h1 style="font-size: 48px; font-weight: bold; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">
+            Willkommen zum Platzbuchungssystem
+        </h1>
+        
+    </div>
+</header>
+
+
+<!-- HERO -->
+<section class="hero hero-bg d-flex justify-content-center align-items-center">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
+                <div class="hero-text">
+                    <h1 class="text-white" data-aos="fade-up">Reservieren Sie Ihre Plätze einfach und schnell bei DATACIDERS.</h1>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-12">
+                <div class="hero-image" data-aos="fade-up" data-aos-delay="300">
+                    <img src="./Fotos/sdcLogo.jpg" class="img-fluid" alt="working girl">
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- TASK -->
+
+<section class="about section-padding pb-0" id="ziel">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 mx-auto col-md-10 col-12 text-center">
+                <div class="about-info" style="text-align: justify;">
+                    <h2 class="mb-4" data-aos="fade-up"><strong>Worum geht es?</strong></h2>
+                    <p class="mb-0" data-aos="fade-up"
+                       style="margin: 0 auto; max-width: 2000px;"> Aufgrund geänderter Bedarfe ist SD&C kürzlich in neue Räumlichkeiten umgezogen. Dort gibt es
+                       keine festen Arbeitsplätze.<br><br>
+
+                       SD&C braucht ein Platzbuchungssystem für das neue Büro: zur Koordination, zur
+                       Entscheidungshilfe.          
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ABOUT -->
+<section class="about section-padding pb-0" id="about">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 col-md-10 col-12">
+                <div class="about-info" style="text-align: justify;">
+                    <h2 class="mb-4" data-aos="fade-up"><strong>Anforderungen ...</strong></h2>
+                    <p class="mb-0" data-aos="fade-up" style="max-width: 2000px;"> ... Plätze einfach mit Login-Daten ihrer Microsoft-Accounts buch- und stornierbar.
+                        Übersicht über Buchungen mit Platzausstattung und Information, wer welchen Platz gebucht hat.
+                        Plätze sollen editierbar sein. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="about section-padding pb-0" id="ergebnisse">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-7 col-md-10 col-12">
+                <div class="col-lg-7 mx-auto col-md-10 col-12">
+                    <div class="members">
+                        <h2 class="mb-5" data-aos="fade-up" style="font-size: 35px; white-space: nowrap; margin: 0 auto; margin-left: -70px;">
+                            <strong>Ein Einblick in unser Zwischenergebnis </strong>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="ergebnis-image" data-aos="fade-up" data-aos-delay="100">
+                <img src="./Fotos/zwischenEr1.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr2.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr3.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr4.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr5.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr6.png" class="img-fluid" alt="ZwischenErgebnis">
+                <img src="./Fotos/zwischenEr7.png" class="img-fluid" alt="ZwischenErgebnis">
+            </div>
+            <div class="row justify-content-center" data-aos="fade-up">
+                        <h2 class="col-lg-7 mx-auto col-md-10 col-12"  data-aos="fade-up" style="font-size: 35px; white-space: nowrap; margin: 0 auto; margin-left: -70px;">
+                            <strong> Unser Ergebnis </strong>
+                        </h2>
+            </div>        
+            </div>
+        </div>
+    </div>
+</section>
+
+ <!-- <video controls class="img-fluid" width="100%" style="margin-top: 50px">
+                    <source src="../projektwebsite/VideoRecoon.mp4" type="video/mp4">
+                </video>-->
+
+<section class="project section-padding pb-0" id="project">
+    <div class="row">
+
+        <div class="col-lg-7 mx-auto col-md-10 col-12">
+            <div class="members">
+                <h2 class="mb-5 text-center" data-aos="fade-up">
+                    Das sind
+                    <strong>wir</strong>
+                </h2>
+                <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+                    <div style="width: 10%; height: 1px; background-color: #ccc;"></div>
+                </div>
+            </div>
+
+            <p style="text-align: center; margin-bottom: 50px;">Unser Team bestand aus sechs Studentinnen.</p>
+
+            <div class="members-container" data-aos="fade-up" data-aos-delay="200" style="padding-top: 20px; padding-bottom: 20px;">
+                <img src="./Fotos/memLogo.png" class="img-fluid" alt="members" style="width: 190%; border: 30px solid var(--project-bg); border-radius: 25px; ">
+            </div>
+
+            <div class="members" style="display: flex; align-items: center; justify-content: center;  width: 100%;  margin-left: -30px;">
+                <div class="wrap aos-init aos-animate" data-aos="fade-up" style="text-align: left;">
+                    <ul class="bullet" style="list-style-type: none">
+                        <li class="members">Melisa Cihan - Entwicklerin</li>
+                        <li class="members">Julie Elsa Kouekam - Entwicklerin</li>
+                        <li class="members">Elise Schwentesius- Entwicklerin</li>
+                        <li class="members">Karenina Schröder - Product Ownerin / Entwicklerin</li>
+                        <li class="members">Liana Islamova- Scrum Masterin / Entwicklerin</li>
+                        <li class="members">Cindy Stammberger - Entwicklerin</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<section class="testimonial section-padding" id="technologien">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-12" data-aos="fade-up">
+                <div class="contact-image" style="text-align: center" data-aos="fade-up">
+                    <h2 class="mb-5 text-center" data-aos="fade-up">
+                        <strong>Unsere Tools</strong>
+                    </h2>
+                    <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
+                        <div style="width: 10%; height: 1px; background-color: #ccc;"></div>
+                    </div>
+                </div>
+                <p class="text-center">Womit wir gearbeitet haben</p>
+                <section class="image-carousel" data-aos="fade-up">
+                    <div class="container">
+                        <div class="slider-container">
+                            <div class="slider">
+                                <img class="image" src="./Fotos/googleDocs.png" alt="Google Docs">
+                                <img class="image" src="./Fotos/TrelloLogo.png" alt="Trello">
+                                <img class="image" src="./Fotos/FigmaLogo.png" alt="Figma">
+                                <!-- <img class="image" src="./Fotos/SpringbootLogo.png" alt="Spring Boot">-->
+                                <img class="image" src="./Fotos/ZoomLogo.png" alt="Zoom">
+                                <img class="image" src="./Fotos/IntellijLogo.png" alt="IntelliJ IDEA">
+                                <img class="image" src="./Fotos/SlackLogo.png" alt="Slack">
+                                <img class="image" src="./Fotos/ChaptgptLogo.png" alt="ChatGPT">
+                                <img class="image" src="./Fotos/PostmanLogo.png" alt="Postman">
+                                <img class="image" src="./Fotos/mongodbLogo.png" alt="mongoDb">
+                                <img class="image" src="./Fotos/GitHubLogo.png" alt="GitHub">
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- SCRIPTS -->
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/aos.js"></script>
+<script src="./js/owl.carousel.min.js"></script>
+<script src="./js/smoothscroll.js"></script>
+<script src="./js/custom.js"></script>
+
+
+<script>
+    $(document).on('ready', function () {
+        $('.js-slick-carousel').each(function() {
+            var slickCarousel = $.HSCore.components.HSSlickCarousel.init($(this));
+        });
+    });
+</script>
+<footer id="myfooter" class="footer mt-auto py-3" style="color: white;">
+    <div class="container">
+        <div class="row">
+            <div class="col-3">
+                <a><img src="./images/logo_htw.png" alt="HTW"
+                        style="height:30px;" /></a>
+            </div>
+            <a class="col-3" href="https://www.htw-berlin.de" style="color: white;">HTW Berlin</a>
+            <a class="col-3" href="https://www.htw-berlin.de/datenschutz/" style="color: white;">Datenschutzerklärung</a>
+            <a class="col-3" href="https://www.htw-berlin.de/impressum/" style="color: white;">Impressum</a>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+
+</html>
