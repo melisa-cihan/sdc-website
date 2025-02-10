@@ -107,15 +107,15 @@
 }
 
 .members-image img {
-    width: 100%; /* Les images prennent toute la largeur de leur cellule */
-    max-width: 300px; /* Limite la taille des images si nécessaire */
+    width: 100%;
+    max-width: 300px;
     border: 30px solid var(--project-bg);
     border-radius: 25px;
 }
 
 
 .video-spacing {
-  margin-top: 20px; /* Ajustez cette valeur pour l'espace désiré */
+  margin-top: 80px; 
 }
 
 [data-aos="fade-up"] {
@@ -129,6 +129,28 @@
   transform: translate3d(0, 0, 0);
 }
 
+.centered-title {
+  text-align: center;
+  font-size: 35px;
+  white-space: nowrap;
+  margin: 0 auto;
+  margin-bottom: 60px; 
+
+}
+
+.about-info p.mb-0 {
+    margin-bottom: 1px; 
+}
+
+.navbar-brand {
+  margin-left: 0; 
+}
+
+.navbar-nav {
+  margin-left: auto; 
+}
+
+
 
     
 
@@ -138,20 +160,20 @@
 <!-- Header -->
 <header style="background: url('image-path.jpg') no-repeat center center/cover; color: white; padding: 20px 0;">
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
+        <div class="container-fluid"> <!-- Utilisez container-fluid pour occuper toute la largeur de la page -->
             <a class="navbar-brand" style="color: white; font-weight: 900; font-size: 28px;">
-                DATACIDERS Platzbuchungssystem
+                DATAC!DERS SD&C Platzbuchungssystem
             </a>
-
+    
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#ziel" class="nav-link smoothScroll" style="color: white;">Aufgabe</a>
+                        <a href="#ziel" class="nav-link smoothScroll" style="color: white;">Anforderungen</a>
                     </li>
                     <li class="nav-item">
                         <a href="#ergebnisse" class="nav-link smoothScroll" style="color: white;">Ergebnisse</a>
@@ -172,6 +194,7 @@
             </div>
         </div>
     </nav>
+    
     <div class="container text-center mt-4">
         <h1 style="font-size: 48px; font-weight: bold; text-shadow: 2px 2px 10px rgba(0,0,0,0.5);">
             Willkommen zum Platzbuchungssystem
@@ -188,7 +211,7 @@
 
             <div class="col-lg-6 col-md-10 col-12 d-flex flex-column justify-content-center align-items-center">
                 <div class="hero-text">
-                    <h1 class="text-white" data-aos="fade-up">Reservieren Sie Ihre Plätze einfach und schnell bei DATACIDERS.</h1>
+                    <h1 class="text-white" data-aos="fade-up">Mit einem Klick - zum richtigen Platz <h2 data-aos="fade-up">Buchen statt suchen!</h2></h1>
                 </div>
             </div>
 
@@ -203,35 +226,60 @@
 </section>
 
 <!-- TASK -->
+<section class="about section-padding pb-0" id="ziel">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11 mx-auto col-md-10 col-12 text-center">
+                <div class="about-info" style="text-align: justify;">
+                    <h2 class="mb-4" data-aos="fade-up"><strong>Produktvision</strong></h2>
+                    <p class="mb-0" data-aos="fade-up"
+                       style="margin: 0 auto; max-width: 2000px; margin-bottom: 10px;"> <i>Mit einem Klick zum richtigen Platz - für eine Welt, die in Bewegung bleibt. Unser Ziel ist es, Menschen und Ideen ohne Hindernisse zusammenzubringen und Plätze zu schaffen, die Innovation und Zusammenarbeit fördern - damit jeder die Möglichkeit hat, Neues zu schaffen und Großes zu erreichen</i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="about section-padding pb-0" id="ziel">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-11 mx-auto col-md-10 col-12 text-center">
                 <div class="about-info" style="text-align: justify;">
-                    <h2 class="mb-4" data-aos="fade-up"><strong>Worum geht es?</strong></h2>
+                    <h2 class="mb-4" data-aos="fade-up"><strong>Produktziel</strong></h2>
                     <p class="mb-0" data-aos="fade-up"
-                       style="margin: 0 auto; max-width: 2000px;"> Aufgrund geänderter Bedarfe ist SD&C kürzlich in neue Räumlichkeiten umgezogen. Dort gibt es
-                       keine festen Arbeitsplätze.<br><br>
-
-                       SD&C braucht ein Platzbuchungssystem für das neue Büro: zur Koordination, zur
-                       Entscheidungshilfe.          
+                       style="margin: 0 auto; max-width: 2000px; margin-bottom: 10px;"> <i>Für SD&C, die ein Büro haben, das nicht genug feste Arbeitsplätze für alle Mitarbeitenden bietet, ist unsere Webanwendung ein Platzbuchungssystem, welches das einfache Verwalten der verfügbaren Arbeitsplätze ermöglicht. Im Gegensatz zu bestehenden ähnlichen Systemen wie SpaceIQ ist unsere Anwendung maßgeschneidert und fast kostenlos</i></p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 <!-- ABOUT -->
 <section class="about section-padding pb-0" id="about">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-11 col-md-10 col-12">
                 <div class="about-info" style="text-align: justify;">
-                    <h2 class="mb-4" data-aos="fade-up"><strong>Anforderungen ...</strong></h2>
-                    <p class="mb-0" data-aos="fade-up" style="max-width: 2000px;"> ... Plätze einfach mit Login-Daten ihrer Microsoft-Accounts buch- und stornierbar.
-                        Übersicht über Buchungen mit Platzausstattung und Information, wer welchen Platz gebucht hat.
-                        Plätze sollen editierbar sein. </p>
-                </div>
+                    <h2 class="mb-4" data-aos="fade-up"><strong>Projektanforderungen</strong></h2>
+                    <p class="mb-0" data-aos="fade-up" style="max-width: 2000px;">
+                      <h3>Must Have's:</h3>
+                      <ul>
+                        <li>Es ist möglich, einen freien Platz für einen bestimmten Tag zu buchen</li>
+                        <li>Es ist möglich, eine Buchung zu stornieren</li>
+                        <li>Die Beschreibung der Plätze kann durch die Nutzer verändert werden</li>
+                        <li>Es werden die verfügbaren Plätze an auswählbaren Tagen einschließlich ihrer Ausstattung und Beschreibung angezeigt</li>
+                        <li>Es ist ersichtlich, an welchem Tag welcher Platz gebucht wurde</li>
+                      </ul>
+                      <h3>Nice to Have's, die wir umgesetzt haben:</h3>
+                      <ul>
+                        <li>Floorplan</li>
+                        <li>Plätze mit Rechtsklick hinzufügen</li>
+                        <li>Plätze löschen</li>
+                        <li>Elemente der Barrierefreiheit</li>
+                      </ul>
+                    </p>
+                  </div>
+                  
             </div>
         </div>
     </div>
@@ -290,13 +338,14 @@
 
             </div>
             <div class="row justify-content-center" data-aos="fade-up">
-                <h2 class="col-lg-7 mx-auto col-md-10 col-12" data-aos="fade-up" style="font-size: 35px; white-space: nowrap; margin: 0 auto; margin-left: -70px;">
+                <h2 class="col-lg-7 mx-auto col-md-10 col-12 centered-title" data-aos="fade-up">
                     <strong> Unser Ergebnis </strong>
                 </h2>
-                <video width="600" controls style="margin-top: 20px;">
-                    <source src="./video/FINAL VIDEO.mov" type="video/mov">
+                <video width="800" controls style="margin-top: 20px;">
+                    <source src="./video/FINAL VIDEO.mp4" type="video/mp4">
                 </video>
-            </div>   
+            </div>
+             
             
             
             </div>
@@ -354,7 +403,7 @@
             <div class="col-lg-12 col-12" data-aos="fade-up">
                 <div class="contact-image" style="text-align: center" data-aos="fade-up">
                     <h2 class="mb-5 text-center" data-aos="fade-up">
-                        <strong>Unsere Tools</strong>
+                        <strong>Unsere Technologien & Tools</strong>
                     </h2>
                     <div style="display: flex; justify-content: center; align-items: center; margin: 40px 0;">
                         <div style="width: 10%; height: 1px; background-color: #ccc;"></div>
